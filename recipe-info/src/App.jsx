@@ -3,9 +3,12 @@ import MainRoutes from "../Routes/MainRoutes"
 
 const App = () => {
   return (
-    <div className="py-10 px-[10%] bg-gray-900 w-screen h-screen text-white font-thin">
-      <NavBar />
-      <MainRoutes />
+    <div className="min-h-screen bg-gray-900 text-white font-thin">
+      <div className="fixed inset-0 bg-gray-900 -z-10"></div>
+      <div className="relative z-10">
+        <NavBar />
+        <MainRoutes />
+      </div>
     </div>
   )
 }
